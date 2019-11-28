@@ -77,6 +77,9 @@ html {
   color: white;
   text-shadow: none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 /*------------------------------------*\
 #Elements
@@ -415,6 +418,36 @@ website main layout
   font-size: 1rem; /* 1rem = 1 font-size van de body*/
 }
 
+/*
+ dashboard item shizzle 
+ */
+.c-dashboard {
+  display: grid;
+  grid-gap: 30px;
+  margin-bottom: var(--global-baseline);
+}
+
+.c-dashboard__item {
+  background-color: white;
+  box-shadow: var(--shadow-neutral);
+}
+@media screen and (min-width: 720px) {
+  .c-dashboard {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.c-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.card__select {
+  width: auto;
+}
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
@@ -514,6 +547,43 @@ website main layout
 
 .u-text-sm {
   font-size: 14px;
+}
+
+/* 
+-- collums in grid --
+ */
+.u-12-of-12 {
+  grid-column: 1/-1;
+}
+.u-11-of-12 {
+  grid-column: 1/12;
+}
+.u-10-of-12 {
+  grid-column: 1/11;
+}
+.u-9-of-12 {
+  grid-column: 1/10;
+}
+.u-8-of-12 {
+  grid-column: 1/9;
+}
+.u-7-of-12 {
+  grid-column: 1/8;
+}
+.u-6-of-12 {
+  grid-column: 1/7;
+}
+.u-5-of-12 {
+  grid-column: 1/6;
+}
+.u-4-of-12 {
+  grid-column: 1/5;
+}
+.u-3-of-12 {
+  grid-column: 1/4;
+}
+.u-2-of-12 {
+  grid-column: 1/3;
 }
 
 /*------------------------------------*\
