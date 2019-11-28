@@ -448,6 +448,17 @@ website main layout
   width: auto;
 }
 
+.circle-1 {
+  stroke-dasharray: 30 189;
+}
+.circle-2 {
+  stroke-dasharray: 50 189;
+  stroke-dashoffset: -30;
+}
+.circle-3 {
+  stroke-dasharray: 100 189;
+  stroke-dashoffset: -80;
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
@@ -553,37 +564,40 @@ website main layout
 -- collums in grid --
  */
 .u-12-of-12 {
-  grid-column: 1/-1;
+  grid-column: span 12;
 }
 .u-11-of-12 {
-  grid-column: 1/12;
+  grid-column: span 11;
 }
 .u-10-of-12 {
-  grid-column: 1/11;
+  grid-column: span 10;
 }
 .u-9-of-12 {
-  grid-column: 1/10;
+  grid-column: span 9;
 }
 .u-8-of-12 {
-  grid-column: 1/9;
+  grid-column: span 8;
 }
 .u-7-of-12 {
-  grid-column: 1/8;
+  grid-column: span 7;
 }
 .u-6-of-12 {
-  grid-column: 1/7;
+  grid-column: span 6;
 }
 .u-5-of-12 {
-  grid-column: 1/6;
+  grid-column: span 5;
 }
 .u-4-of-12 {
-  grid-column: 1/5;
+  grid-column: span 4;
 }
 .u-3-of-12 {
-  grid-column: 1/4;
+  grid-column: span 3;
 }
 .u-2-of-12 {
-  grid-column: 1/3;
+  grid-column: span 2;
+}
+.u-2-row {
+  grid-row: span 2;
 }
 
 /*------------------------------------*\
